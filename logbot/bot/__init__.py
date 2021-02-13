@@ -1,0 +1,1 @@
+from logbot.bot.logbot import LogBot
