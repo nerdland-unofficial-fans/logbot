@@ -41,7 +41,7 @@ class LogChecker(commands.Cog, name = "Logchecker"):
             print("Added: ", new_log_contents)
             channel = self.bot.get_channel(808801637047992391)
             if channel:
-                await channel.send('```\n{}```'.format(new_log_contents))
+                await channel.send('```autohotkey\n{}```'.format(new_log_contents))
 
 
     @check_logs.before_loop
