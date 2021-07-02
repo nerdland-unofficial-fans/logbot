@@ -18,7 +18,6 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
 COPY . .
-RUN pip install dist/*.whl
 
 FROM base as final
 
