@@ -26,4 +26,4 @@ ENV VIRTUAL_ENV=/venv
 COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
 
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-CMD ["python", "-m", "nerdlandbot"]
+CMD ["python", "-m", "logbot"]
