@@ -17,13 +17,13 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-COPY . .
-
 FROM base as final
 
 ENV VIRTUAL_ENV=/venv
 
 COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
+
+COPY . .
 
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 CMD ["python", "-m", "logbot"]
