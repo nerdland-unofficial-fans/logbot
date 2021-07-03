@@ -36,12 +36,12 @@ python -m logbot
 # Running this bot with docker
 
 ```
-docker run -itd --restart="unless-stopped" --name nerdlandbot \
+docker run -itd --restart="unless-stopped" --name logbot \
  -e PREFIX=<Your prefix here> \
  -e DISCORD_TOKEN=<Your discord token here> \
  -e FILE_TO_WATCH=<file to watch> \
  -e CHANNEL_ID=<text channel ID>
- nerdlandfansunofficial/nerdlandbot:latest
+ ghcr.io/nerdland-unofficial-fans/logbot/logbot:stable
 ```
 
 # Links
