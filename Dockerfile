@@ -18,7 +18,7 @@ COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
 COPY . .
-RUN python setup.py build
+RUN pip install ./logbot
 
 FROM base as final
 
