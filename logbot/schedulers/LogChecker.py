@@ -15,7 +15,7 @@ class LogChecker(commands.Cog, name="Logchecker"):
         self.bot = bot
         print(os.getcwd())
         self.path = os.getenv("FILE_TO_WATCH")
-        self.channel_id = os.getenv("CHANNEL_ID")
+        self.channel_id = int(os.getenv("CHANNEL_ID"))
 
         log_file = open(self.path)
         for offset, l in enumerate(log_file):
